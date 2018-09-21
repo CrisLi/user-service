@@ -1,0 +1,18 @@
+package org.chris.service.rest;
+
+import java.time.LocalDateTime;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import reactor.core.publisher.Mono;
+
+@RestController
+public class HomeController {
+
+    @GetMapping("/")
+    public Mono<String> home() {
+        return Mono.just("User Service (" + LocalDateTime.now() + ")");
+    }
+
+}

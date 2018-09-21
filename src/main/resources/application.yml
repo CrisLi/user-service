@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: user-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: user_service
+
+user-service:
+  security:
+    jwt:
+      secret: user-service-secret!!!
+      expiration-time-in-hours: 5
+    admin:
+      username: admin
+      password: 123456
