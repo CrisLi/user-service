@@ -5,7 +5,7 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: user_service
+      database: user_service_dev
 
 user-service:
   security:
